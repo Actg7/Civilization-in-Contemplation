@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Music,Classics,HTML,CSS,JavaScript">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <title>About | Civilization in Contemplation</title>
+        <div class="abtpagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+          	<a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html"><span class="currentLink">ABOUT</span></a>
+          <div class="dropdown">
+            <button class="dropbtn">TOPICS ▾</button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+         <!--<a href="index.html">HOME</a>-->
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          var ids = ['abt1', 'abt2'];
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var w = document.getElementById("abt");
+            if (w.className === "abt") {
+              w.className += "-darkmode";
+            } else {
+              w.className = "abt";
+            }
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "abtpagetop") {
+              y.className += "-darkmode";
+            } else {
+              y.className = "abtpagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode";
+            } else {
+              z.className = "darkmodebtn";
+            }
+            for (var i = 0; i < ids.length; i++) {
+            	var v = document.getElementById(ids[i]);
+            	if (v.className === "section") {
+            		v.className += "-darkmode";
+            	} else {
+            		v.className = "section";
+            	}
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body class="about">
+		<button onclick="topFunction()" id="topBtn">🔝</button>
+        <script>
+	        var mybutton = document.getElementById("topBtn");
+	        window.onscroll = function() {scrollFunction()};
+	        function scrollFunction() {
+	          if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+	            mybutton.style.display = "block";
+	          } else {
+	            mybutton.style.display = "none";
+	          }
+	        }
+	        function topFunction() {
+	          document.body.scrollTop = 0;
+	          document.documentElement.scrollTop = 0;
+	        }
+        </script>
+        <div class="container-fluid">
+
+            <!--<div id="top">-->
+              <br></br>
+              <br></br>
+              <!--<img src="roman_pillars.png" class="roman"/>-->
+            <!--</div>-->
+
+            <!--<div id="top">-->
+
+        <!--<div style="padding-left:16px">-->
+
+        <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+          <h1 class="abt" id="abt">ABOUT</h1>
+          <img src="./images/logo_large.svg" class="center"/>
+          <!--<p><center><img src="olive_branch_left.png" class="olive"/><img src="olive_branch_right.png" class="olive"/></center></p>-->
+          <br></br>
+          <img src="./images/struct.png" class="center"/>
+        <!--</div>-->
+<br></br>
+<!--<img src="portrait.png" alt="" class="center"/>-->
+<!--<p><center><img src="olive_branch_left.png" class="olive"/><img src="olive_branch_right.png" class="olive"/></center></p>-->
+<p>Welcome to the site! I'm Athanasios Grivakis, a student at the Georgia Institute of Technology. I enjoy creating and coming up with unique projects, such as developing this website.</p>
+<p>This project allows me to highlight a variety of topics from different civilizations, while analyzing the patterns and constructs woven within these topics. By understanding aspects of different cultures and time periods, it is possible to find mathematical applications in action and understand different perspectives. I enjoy educating as much as I enjoy learning, and I hope that this site contributes to a greater learning experience.</p>
+<br></br>
+<p class="section" id="abt1">Motivation:</p>
+<br></br>
+<p>I came up with the idea for this site with two primary goals:</p>
+<ol>
+  <li>To spread knowledge to other people about a variety of topics and</li>
+  <li>To show how these different topics are relevant to the people and societies they are from, and how they might be relevant to us.</li>
+</ol>
+<p>This website will appeal to people conducting academic research on the presented aspects of these societies, while also appealing to those looking to learn about patterns and significance embedded within various activities and cultures.</p>
+<p>For now, I have focused on topics which I have studied or experienced firsthand. Going forward, I plan on expanding this site to include more topics and to introduce new patterns and connections within those topics.</p>
+<p>A primary focus of this site is to present these various topics in a way that is engaging and easy to understand. These topics attempt to go in depth without taking away from the meaningfulness and purpose of the information.</p>
+<p>I hope this site illustrates interesting connections between aspects from different societies/civilizations and the logic and patterns embedded within them, and inspires futher learning!</p>
+<br></br>
+<p class="section" id="abt2">Get in Touch!</p>
+<br></br>
+<p class="center">Feel free to share your feedback or leave a message:</p>
+<!--
+<form action="contact.php" method="post">
+	<div class="elem-group">
+		<b><label for="name">Name:</label></b>
+		<input type="text" id="name" name="visitor_name" placeholder="Your name..">
+	</div>
+	<div class="elem-group">
+		<b><label for="email">Email:</label></b>
+		<input type="email" id="email" name="visitor_email" placeholder="Email address..">
+	</div>
+	<div class="elem-group">
+		<b><label for="message">Message:</label></b>
+		<textarea id="message" name="visitor_message" placeholder="Write something.." style="height:170px"></textarea>
+	</div>
+	<button type="submit">Submit</button>
+</form>-->
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<img src="./images/beach.gif" alt="" style="width:85%">
+		</div>
+		<div class="column">
+			<form action="contact.php" method="post">
+				<!--<b><label for="name">Name:</label></b>-->
+				<input type="text" id="name" name="visitor_name" placeholder="Your name.." pattern=[A-Z\sa-z]{2,20} required>
+				<!--<b><label for="email">Email:</label></b>-->
+				<input type="email" id="email" name="visitor_email" placeholder="Email address.." required>
+				<!--<b><label for="message">Message:</label></b>-->
+				<textarea id="message" name="visitor_message" placeholder="Write something.." required style="height:170px"></textarea>
+        		<button class="submit" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="array">
+	<div class="webLinkButtons">
+		<button class="facebook" onclick="location.href='https://www.facebook.com/athanasios.grivakis';">
+			<span><i class="fab fa-facebook-f"></i></span> Connect..
+		</button>
+		<button class="instagram" onclick="location.href='https://www.instagram.com/athanasios.g/';">
+			<span><i class="fab fa-instagram"></i></span> Follow..
+		</button>
+		<button class="linkedin" onclick="location.href='https://www.linkedin.com/in/athanasios-grivakis/';">
+			<span><i class="fab fa-linkedin-in"></i></span> Link..
+		</button>
+	</div>
+</div>
+<div align="center">
+<!--  
+<div class="social">
+<ul class="social-icons">
+    <li><a href="https://www.facebook.com/athanasios.grivakis"><img class="social" src="facebook.png" onmouseover="this.src='facebook_blue.png'" onmouseout="this.src='facebook.png'"/></a></li>
+    <li><a href="https://www.instagram.com/athanasios.g/"><img class="social" src="instagram.png" onmouseover="this.src='instagram_pink.png'" onmouseout="this.src='instagram.png'"/></a></li>
+    <li><a href="https://www.linkedin.com/in/athanasios-grivakis/"><img class="social" src="linkedin.png" onmouseover="this.src='linkedin_blue.png'" onmouseout="this.src='linkedin.png'"/></a></li>
+</ul>
+-->
+<p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+            </div>
+
+            <div id="bottom" align="center"> 
+                <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+            </div>
+<br></br>
+</div>
+      <div class="bottom" align="center">
+        <img src="./images/roman_pillars.png" class="roman"/>
+        <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+      </div>
+
+        </div>
+
+    </body>
+
+</html>

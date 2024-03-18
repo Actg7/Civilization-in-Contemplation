@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Music,Classics,HTML,CSS,JavaScript">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+        <title>Byzantine Music | Civilization in Contemplation</title>
+        <div class="pagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+            <a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html">ABOUT</a>
+          <div class="dropdown">
+            <button class="dropbtn"><span class="currentLink">TOPICS ▾</span></button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+          <!--<a href="index.html">HOME</a>-->
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          var ids = ['byz1', 'byz2', 'byz3', 'byz4', 'byz5', 'byz6'];
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "pagetop") {
+              y.className += "-darkmode";
+            } else {
+              y.className = "pagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode";
+            } else {
+              z.className = "darkmodebtn";
+            }
+            for (var i = 0; i < ids.length; i++) {
+              var w = document.getElementById(ids[i]);
+              if (w.className === "section") {
+                w.className += "-darkmode";
+              } else {
+                w.className = "section";
+              }
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="topBtn">🔝</button>
+        <script>
+        var mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <div class="container-fluid">
+
+            <div id="top">
+              <br></br>
+              <br></br>
+              <!--<img src="roman_pillars.png" class="roman"/>-->
+            </div>
+
+            <!--<div id="top">-->
+
+        <!--<div style="padding-left:16px">-->
+          <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+          <h2 class="ribbon">
+            <strong class="ribbon-content">Byzantine Music</strong>
+          </h2>
+          <p><center><span class="emoji">🎶</span></center></p>
+        <!--</div>-->
+<div id="toc_container">
+  <p class="toc_title"><span class="toc-decoration">Contents</span></p>
+  <ul class="toc_list">
+    <li><a href="#Origin and History">Origin and History</a></li>
+    <li><a href="#Modes and Scales">Modes and Scales</a></li>
+    <li><a href="#Notation and Structure">Notation and Structure</a></li>
+    <li><a href="#Relevance">Relevance</a></li>
+  </ul>
+</div>
+<br></br>
+<p>Byzantine music is the traditional liturgical music of the Greek Orthodox Church. It was developed during the time of the Byzantine Empire (4th to 16th centuries) and into the 16th century. It continues to be used today in the Orthodox rite. The historical and meaningful relation between Byzantine music and the Orthodox worship protected it from Western influences. Therefore, Byzantine music was instrumental in preserving the fundamental elements and purposes of Orthodoxy.</p>
+<p>Let’s look at the history, structure and notation of Byzantine music.</p>
+<div id="Origin and History"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="byz1">The Origin and History of Byzantine Chant:</p>
+<br></br>
+<p>Christianity’s origins lie in Syria and Palestine. It is important to note that the Christian communities inherited the traditions of chanting and singing from the Jewish synagogues. The oldest Byzantine melodies trace back to the churches of Antioch and Jerusalem, in the form of Hebrew religious music and Syrian and Greek secular music. In the 6th century, St. John of Damascus organized Byzantine music into the oktoechos system; this categorizes Byzantine music into eight modes, or tones. The oktoechos created by John of Damascus is known as Hagiopolitan Octoechos. In the 13th century, John Glykys and John Koukouzeles modified the oktoechos into what is now referred to as Papadic Octoechos. In the 18th century, Archbishop Chrysanthos of Madytos further modified the oktoechos into what is now known as the Neobyzantine Octoechos. This version is still in use today. Prior to the tenth century, Byzantine chant used an ecphonetic notation, which derives from accent marks of the Greek grammarians from Alexandria. These gave vague direction of upwards and downwards voice movement. The hymns were mainly learned by oral communication for centuries. Later in the 10th to 12th centuries, Byzantine musical notation changed to a neumatic notation in what is referred to as Paleo-Byzantine music notation. Due to its lack of precision in notating rhythms and intervals, it was later reformed into Middle Byzantine notation. This made use of neumes, which indicated a note or group of notes to be sung in a single syllable. Notation in manuscripts form the 16th to 19th centuries is referred to as Neo-Byzantine notation due to stylistic features in the music. In the 19th century, a group including Chrysanthos decided to reform the (then) current version of Neo-Byzantine notation, making it simpler to understand. This attracted many believers to study the new Neo-Byzantine notation, and is the notation of Byzantine music currently in usage.</p>
+<div id="Modes and Scales"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="byz2">Byzantine Music Modes and Scales:</p>
+<br></br>
+<img src="./images/mode.png" alt="" class="center"/>
+<br></br>
+<p>In music theory, a mode refers to a type of scale coupled with characteristic melodic behaviors. In Western music, there are two major modes: major and minor. These modes are built around a specific tone and follow specific melodic patterns due to their scale intervals (which we will look at later). This gives them a distinctive musical character.</p>
+<p>In Byzantine music, there are eight distinctive tones, or echos. Each echo is a family of musical modes. The eight echos are: First, Second, Third, Fourth, Plagal first, Plagal second, Grave (Plagal third), and Plagal fourth. These echos generally follow specific interval patterns. An octave can be broken up into trichords (interval of three), tetrachords (interval of four), and pentachords (interval of five). These musical intervals were fundamental in ancient Greek music modes. These interval divisions of the octave result in certain melodic characteristics. Because of this, the eight echos exhibit distinguishable melodic characteristics.</p>
+<p>Each echos contains many Byzantine modes. The echos can fall under one of four scale types: Diatonic, Soft Chromatic, Hard Chromatic, or Enharmonic. The scale an echos is played in determines the specific pitch frequencies to go in between the chord subdivisions of the octave. This can vary the modal behavior of the echos. In addition, each echos can be played in one of three hymnal styles. These styles define the rhythmic style of the music by varying how many notes are played per syllable (as Byzantine chant is to accompany the words). These styles are Heirmologic (brief, one note per word syllable), Sticheraric (slow, multiple notes per word syllable), and Papadic (very slow, exaggerated number of notes per syllable). The style in which an echos is played affects its modal quality.</p>
+<p>In Western music, the eight-note scale consists of the notes C, D, E, F, G, A, B, C (octave up). Similarly in Byzantine music, there is an eight-note scale which goes: Ni, Pa, Vou, Ga, Di, Ke, Zo, Ni’ (octave up). When we analyze scales, we observe how the frequencies change across the span of an octave. An octave is the doubling of the frequency; the notes in between can be observed as frequencies in between the note and its octave equivalent. In Western music, the major and minor scales are divisible into whole steps and half-steps. The interval pattern for the major scale is 12-12-6-12-12-12-6, and the interval pattern for the minor scale is 12-6-12-12-6-12-12. If we take a scale to be 72 “commas”, then we can split the octave into steps which are not whole steps and half-steps. For the diatonic scale, the scale pattern ascending is 10-8-12-12-10-8-12 (Pa-Vou-Ga-Di-Ke-Zo-Ni’-Pa’), and the scale pattern descending is 12-12-6-12-12-8-10 (Pa’-Ni’-Zo’-Ke-Di-Ga-Vou-Pa). For the soft chromatic scale, the scale pattern is 8-14-8-12-8-14-8 (Ni-Pa-Vou-Ga-Di-Ke-Zo’-Ni’). For the hard-chromatic scale, the scale pattern is 6-20-4-12-6-20-24 (Pa-Vou-Ga-Di-Ke-Zo’-Ni’-Pa’). For the enharmonic scale, the scale pattern is 12-12-6-12-12-6-12 (Ni-Pa-Vou-Ga-Di-Ke-Zo’-Ni’).</p>
+<p>Here is a summary of the characteristics of the eight echos:</p>
+<ul>
+  <li>First: happy, magnificent</li>
+  <li>Second: moving, languid</li>
+  <li>Third: arrogance, mature air</li>
+  <li>Fourth: festive, dance-like</li>
+  <li>Plagal First: merciful, stimulating</li>
+  <li>Plagal Second: sorrowful, funeral-like</li>
+  <li>Grave (Plagal Third): masculinity, melodic strength</li>
+  <li>Plagal Fourth: humble, appeasing</li>
+</ul>
+<p>The following chart demonstrates common modes in the hermiological and sticheraic styles. Note that it doesn’t cover melodic formulas and cadences.</p>
+<br></br>
+<img src="./images/common_modes.png" alt="" class="center"/>
+<div id="Notation and Structure"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="byz3">Musical Notation and Structure:</p>
+<br></br>
+<p>Byzantine chant is monophonic, meaning that it is composed of a single melodic line with minimal harmonization. There are two main parts to the musical structure: the ison and the melody. The ison is the unchanging drone which harmonizes the tonic note. It causes tension and resolution when sung against the melody, creating an expressiveness that enhances the meaning of the text. The ison represents the unwavering light of God. The melody illustrates what is being said by the words (when talking about Heaven, pitch raises, Hades – low); it is said together. The melody represents the unified voice of the church.</p>
+<p>Byzantine notation is read from left to right, and if there are multiple symbols overlapped then those are read from bottom to top. There are a number of symbols used to represent various musical concepts. Interval symbols are used to describe what interval up/down to sing relative to the previous note. Duration symbols are used to add beats to the music. Division symbols are used to split the beat into equal parts. Some common interval symbols are: Ison (representing the same pitch as the previous note), Oligon (representing an ascending second from the previous note), and Apostrophos (representing a descending second from the previous note). Two other interval symbols to note are the Petasthe (ascending second; stressed, sung as distinctive pitch, often accompanied by flutter) and the Kentemata (ascending second; unstressed, pitch is elided with the previous symbol). The martyries are symbols which denote the starting note of the melody from where to begin to chant. They are not sung, as they are not interval symbols representing actual notes. Martyries are divided into three groups: diatonics, chromatics, and enharmonics. Each note has its own martyries symbol for each scale type. A collective table of many of the common symbols can be found here: http://www.kelfar.net/orthodoxiaradio/<br></br>Byzantine/ByzantineMusicNotationEn.pdf.</p>
+<p>Here are some Byzantine chant exercises for you to look at (for a verbal guide, check this out: https://www.youtube.com/watch?v=AnzOI1847hU):</p>
+<br></br>
+<img src="./images/exercise_1.png" alt="" class="center"/>
+<br></br>
+<img src="./images/exercise_2.png" alt="" class="center"/>
+<br></br>
+<img src="./images/exercise_3.png" alt="" class="center"/>
+<div id="Relevance"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="byz4">Relevance of Byzantine Music in Christianity and Byzantine Society:</p>
+<br></br>
+<p>Byzantine chant has, historically and currently, played the important role of conveying the words recited during Orthodox rituals and adding to them a greater intensity. The understanding and appreciation of traditional Byzantine chant is important, not just for chanters, but for studiers of music as well. Byzantine chant’s influence on Western music is a frequently neglected topic. It is useful to read about this music, but there is no substitute for listening to the real thing, sung by good Byzantine chanters and choirs. As one of the few places where Byzantine chant actively sung, I invite you to come visit the Greek Orthodox Church to enjoy both a traditional and meaningful portrayal of the divine liturgy as well as to hear authentic Byzantine music. Also make sure to search out recordings on the web and on compact discs. I hope that this article will spark an interest to investigate this ancient art form and encourage you to continue learning about this fascinating topic!</p>
+<br></br>
+<p class="section" id="byz5">Credits:</p>
+<ol>
+  <li>Fr. Panayiotis Papageorgiou, Ph.D. https://www.trisagionfilms.com/</li>
+  <li>http://www.kelfar.net/orthodoxiaradio/byzantine.html</li>
+  <li>http://www.newbyz.org/byzantine_music_for_western_musicians.pdf</li>
+  <li>http://www.byzantinebeginnings.com/uploads/1/3/0/4/13044239/byazantine_beginnings_handbook.pdf</li>
+  <li><a href="https://www.vecteezy.com/free-vector/roman-pillar">Roman Pillar Vectors by Vecteezy</a></li>
+  <li>http://www.newbyz.org/namethattone.pdf</li>
+</ol>
+<br></br>
+<p class="section" id="byz6">Learn more:</p>
+<ul>
+  <li>https://www.britannica.com/art/Byzantine-chant</li>
+  <li>https://www.youtube.com/watch?v=AnzOI1847hU</li>
+  <li>http://www.stsconstantinehelen.org/assets/files/Byzantine_Music_Simplified_%28with_neumes%29,_for_alignment.pdf</li>
+  <li>http://www.byzantinechant.org/notation/Table%20of%20Byzantine%20Notation%20Symbols.pdf</li>
+</ul>
+<br></br>
+<p><center><span class="emoji">🎶</span></center></p>
+                
+</div>
+
+<div align="center">
+<br></br>
+<p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+            </div>
+
+            <div id="bottom" align="center"> 
+                <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+            </div>
+<br></br>
+</div>
+      <div class="bottom" align="center">
+        <img src="./images/roman_pillars.png" class="roman"/>
+        <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+      </div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Music,Classics,HTML,CSS,JavaScript">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+        <title>Incan Quipu | Civilization in Contemplation</title>
+        <div class="pagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+            <a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html">ABOUT</a>
+          <div class="dropdown">
+            <button class="dropbtn"><span class="currentLink">TOPICS ▾</span></button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+          <!--<a href="index.html">HOME</a>-->
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          var ids = ['quip1', 'quip2', 'quip3', 'quip4', 'quip5', 'quip6'];
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "pagetop") {
+              y.className += "-darkmode";
+            } else {
+              y.className = "pagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode";
+            } else {
+              z.className = "darkmodebtn";
+            }
+            for (var i = 0; i < ids.length; i++) {
+              var w = document.getElementById(ids[i]);
+              if (w.className === "section") {
+                w.className += "-darkmode";
+              } else {
+                w.className = "section";
+              }
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="topBtn">🔝</button>
+        <script>
+        var mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <div class="container-fluid">
+
+            <div id="top">
+              <br></br>
+              <br></br>
+              <!--<img src="roman_pillars.png" class="roman"/>-->
+            </div>
+
+            <!--<div id="top">-->
+
+        <!--<div style="padding-left:16px">-->
+
+          <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+          <h2 class="ribbon">
+            <strong class="ribbon-content">Quipu: the Incan System of Communication</strong>
+          </h2>
+          <p><center><span class="emoji">🧶</span></center></p>
+        <!--</div>-->
+<div id="toc_container">
+  <p class="toc_title"><span class="toc-decoration">Contents</span></p>
+  <ul class="toc_list">
+    <li><a href="#What are Quipus">What are Quipus?</a></li>
+    <li><a href="#Examples with Quipus">Examples with Quipus</a></li>
+    <li><a href="#Literary Quipus">Literary Quipus</a></li>
+    <li><a href="#Relevance">Relevance</a></li>
+  </ul>
+</div>
+<br></br>
+<p>The Incan civilization is widely known for its vast empire until its conquest and for its ancient citadel, Machu Picchu, resting in the Andes mountains. Less often heard about them is their knowledge and understanding of mathematics and their use of the Peruvian quipu, a counting system using cords and knots.</p>
+<div id="What are Quipus"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="quip1">What is a Quipu?</p>
+<p><center><img src="./images/cord_1.png" alt=""/>
+<img src="./images/cord_2.png" alt=""/></center></p>
+<br></br>
+<p>The quipu consists of a collection of knots and cords used to permanently store and communicate information. These knots and cords are specifically arranged so that their meaning can be interpreted. A quipu is made of a main cord, which has other cords attached perpendicular to it. The cords directly attached to the main cord are referred to as H cords. If there are cords attached to the H cords, they are referred to as B cords. Knots are typically found on the H and B cords, not the main cord. Quipus sometimes contain totalizer cords, which summarize the information of the cord group on a single cord.</p>
+<p>The cords can carry different values based on the type of knots displayed and their position on the cords. Quipus use three different types of knots. Single knots are used to denote values in the tens, hundreds, thousands, and ten-thousands. They are located on the upper parts of the H cords. Figure-eight knots are used to represent the integer “one”. Long knots have anywhere between two to nine turns, which are used to represent the integers two through nine. Figure-eight knots and long knots were placed at the bottom of the cords. Single knots were placed above these in groups of common place value. For example, a figure-eight knot followed by a group of three single knots followed by a group of two more single knots would represent the value 231. Like us, the Incans used a decimal (base-ten) system.</p>
+<div id="Examples with Quipus"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="quip2">Examples with Quipus:</p>
+<br></br>
+<p>Let’s represent long knots by vertical bars tied by a bracket (e.g. “four” would be represented by <img src="./images/long_knot.png" alt=""/>). We will represent single knots by • and figure-eight knots by ∞.</p>
+<p>What number would be represented by this cord?</p>
+<img src="./images/cord_exercise_1.png" alt=""/ class="center">
+<br></br>
+<div align="center">
+<button onclick="showAlert()" class="clickme">
+          Click Me!
+</button>
+<script>
+      function showAlert() {
+        alert("454");
+      }
+</script>
+</div>
+<br></br>
+<p>Try to figure out what numbers would be represented by each of these cords:</p>
+<img src="./images/cord_exercise_2.png" alt=""/ class="center">
+<div id="Literary Quipus"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="quip3">Literary Quipus:</p>
+<br></br>
+<p>The 1996 discovery of a manuscript titled “Historia et Rudimenta Linguae Piruanorum” in Italy contained information that explained how quipus were used as a means of expressing spoken language. “Ideograms” or symbols from well-known Incan art were used to represent both phonograms (sounds) and logograms (words). This was done by weaving a symbol into the cord followed by a number. The number represents which syllable of the word represented by the symbol to consider. In this way, one could either represent the word of the symbol, or represent distinct syllables form the word represented by the symbol. Additionally, the manuscript goes on to ascribe distinct numerical values to the widely used symbols. This means that both phonograms and logograms could be completely represented on quipus by two distinct numbers. The validity of this usage of quipus is currently up for debate.</p>
+<p>Here is a picture to show you an example: </p>
+<br></br>
+<img src="./images/literary_quipu.png" alt=""/ class="center">
+<div id="Relevance"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="quip4">Relevance of Quipus in Incan Society:</p>
+<br></br>
+<img src="./images/complex_quipu.png" alt=""/ class="center">
+<br></br>
+<p>Actual quipus were ornate and of many colors. Because of the complexity if the quipus, designated members of Incan society were selected to be the Quipucamayoc or “keeper of the quipus”. Their role was to construct and interpret the meaning behind the quipus. Quipus held a high societal and sacred importance to the Incans. They were used for record-keeping and recording history; they possibly even served as a functional replacement to a traditional writing system for the Incans. It is also thought that they served a role in the Incans postal system (which covered over 14,000 miles!). The quipus may have served a purpose in astronomy and magic in Incan culture, giving them a sacred position in Incan society.</p>
+<p>Quipus are a pure example of math’s prevalence in society. They are a practical working logical-numerical system that served multiple purposes for the Incan people. Since we are so accustomed to our written system for dealing with numbers, it is fascinating to see a creative and effective way to compute and record numbers as well as more abstract ideas.</p>
+<p>The Incan quipus are still shrouded in mystery. Perhaps there is more to be learned of the indigenous civilization whose mysteries lie within the knots and cords. Only time will reveal to us the secrets of the quipus and the Incan people.</p>
+<br></br>
+<p><center><img src="./images/colorful_quipu.png" alt=""/>
+<img src="./images/colorful_quipu_2.png" alt=""/></center></p>
+<br></br>
+<p class="section" id="quip5">Credits:</p>
+<ol>
+  <li>http://www.ancientscripts.com/quipu.html</li>
+  <li>Quipu from Ayacucho, Peru. Cotton. 1300-1532 CE. Museo Arqueológico Rafael Larco Herrera, Lima, Perú.</li>
+  <li>https://www.opentextbookstore.com/mathinsociety/</li>
+</ol>
+<br></br>
+<p class="section" id="quip6">Learn more:</p>
+<ul>
+  <li>https://www.newscientist.com/article/mg23931972-600-we-thought-the-incas-couldnt-write-these-knots-change-everything/</li>
+  <li>https://www.maa.org/press/periodicals/convergence/mathematical-treasure-the-quipu</li>
+</ul>
+<br></br>
+<p><center><span class="emoji">🧶</span></center></p>
+
+</div>
+
+<div align="center">
+<br></br>
+<p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+            </div>
+
+            <div id="bottom" align="center"> 
+                <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+            </div>
+<br></br>
+</div>
+      <div class="bottom" align="center">
+        <img src="./images/roman_pillars.png" class="roman"/>
+        <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+      </div>
+
+        </div>
+
+    </body>
+
+</html>

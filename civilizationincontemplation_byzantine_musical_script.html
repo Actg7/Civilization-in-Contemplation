@@ -1,0 +1,612 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Music,Classics,HTML,CSS,JavaScript">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+        <title>Byzantine Musical Script | Civilization in Contemplation</title>
+        <div class="pagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+            <a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html">ABOUT</a>
+          <div class="dropdown">
+            <button class="dropbtn"><span class="currentLink">TOPICS ▾</span></button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+          <!--<a href="index.html">HOME</a>-->
+        </div>
+
+        <style>
+        #symbols {
+          border-collapse: collapse;
+          width:70%; 
+          margin-left:15%; 
+          margin-right:15%;
+        }
+
+        #symbols td, #symbols th {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+
+
+        #symbols tr:nth-child(even){background-color: #f2f2f2;}
+
+        #symbols tr:nth-child(odd){background: #f2f2f2;}
+
+        #symbols tr:hover {background-color: white;}
+
+        #symbols th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          background-color: #687BEE;
+          color: white;
+        }
+        </style>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          var ids = ['symbl1', 'symbl2', 'symbl3', 'symbl4', 'symbl5', 'symbl6', 'symbl7', 'symbl8'];
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "pagetop") {
+              y.className += "-darkmode";
+            } else {
+              y.className = "pagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode";
+            } else {
+              z.className = "darkmodebtn";
+            }
+            for (var i = 0; i < ids.length; i++) {
+              var w = document.getElementById(ids[i]);
+              if (w.className === "section") {
+                w.className += "-darkmode";
+              } else {
+                w.className = "section";
+              }
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="topBtn">🔝</button>
+        <script>
+        var mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <div class="container-fluid">
+
+            <!--<div id="top">-->
+              <br></br>
+              <br></br>
+              <!--<img src="roman_pillars.png" class="roman"/>-->
+            <!--</div>-->
+
+            <!--<div id="top">-->
+
+          <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+          <h2 class="ribbon">
+            <strong class="ribbon-content">Byzantine Musical Script</strong>
+          </h2>
+          <!--<h4 class="flash"><img src="greek_cross.png"/><i> A glance at the ancient symbols and text used to notate Byzantine chant </i><img src="greek_cross.png"/></h4>-->
+          <img src="./images/greek_cross.png" class="center"/>
+<br></br>
+<div id="toc_container">
+  <p class="toc_title"><span class="toc-decoration">Contents</span></p>
+  <ul class="toc_list">
+    <li><a href="#Interval Signs">Interval Signs</a></li>
+    <li><a href="#Rhythmic Symbols">Rhythmic Symbols</a></li>
+    <li><a href="#Qualitative Symbols">Qualitative Symbols</a></li>
+    <li><a href="#Scales, Modes and Keys">Scales, Modes and Keys</a></li>
+    <li><a href="#Tempo">Tempo</a></li>
+    <li><a href="#Melody and Cadences">Melody and Cadences</a></li>
+  </ul>
+</div>
+
+<div id="Interval Signs"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl1">Interval Signs</p>
+<table id="symbols">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Signs</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Ison</td>
+    <td class="td-decoration">Same pitch as preceding note</td>
+    <td><img src="./images/ison_neo.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Oligon</td>
+    <td class="td-decoration">Ascending second</td>
+    <td><img src="./images/oligon_neo.png"/></td>
+  </tr>
+   <tr>
+    <td class="td-decoration">Oxeia</td>
+    <td class="td-decoration">Ascending second (stressed)</td>
+    <td><img src="./images/oxeia_neo.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Petasthé</td>
+    <td class="td-decoration">Ascending second with a flutter (stressed)</td>
+    <td><img src="./images/petasthe.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Kentémata</td>
+    <td class="td-decoration">Ascending second (unstressed)</td>
+    <td><img src="./images/kentemata_neo_kata.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Kéntema</td>
+    <td class="td-decoration">Ascending third</td>
+    <td><img src="./images/kentema_neo_kata.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Hypselé</td>
+    <td class="td-decoration">Ascending fifth</td>
+    <td><img src="./images/hypsele.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Apóstrophos</td>
+    <td class="td-decoration">Descending second</td>
+    <td><img src="./images/apostrophos_neo.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Hyporrhoé</td>
+    <td class="td-decoration">Two consecutive descending seconds</td>
+    <td><img src="./images/hyporrhoe.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Elaphrón</td>
+    <td class="td-decoration">Descending third</td>
+    <td><img src="./images/elaphron.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Khamelé</td>
+    <td class="td-decoration">Descending fifth</td>
+    <td><img src="./images/khamele.png"/></td>
+  </tr>
+<tr>
+    <td class="td-decoration">Synechés Elaphrón</td>
+    <td class="td-decoration">Descending third with special rhythm</td>
+    <td><img src="./images/apostrophos_neo.png"/><img src="./images/elaphron.png"/></td>
+  </tr>
+</table>
+<br></br>
+<div id="Rhythmic Symbols"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl2">Rhythmic Symbols</p>
+<table id="symbols">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Signs</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Klásma</td>
+    <td class="td-decoration">Adds one beat</td>
+    <td><img src="./images/klasma_ano.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Aplé</td>
+    <td class="td-decoration">Adds one beat</td>
+    <td><img src="./images/aple.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Diplé</td>
+    <td class="td-decoration">Adds two beats</td>
+    <td><img src="./images/diple.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Triplé</td>
+    <td class="td-decoration">Adds three beats</td>
+    <td><img src="./images/triple.png"/></td>
+  <tr>
+    <td class="td-decoration">Gorgón</td>
+    <td class="td-decoration">Divides the beat in two equal parts</td>
+    <td><img src="./images/gorgon_neo_ano.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Dígorgon</td>
+    <td class="td-decoration">Divides the beat in three equal parts</td>
+    <td><img src="./images/digorgon.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Trígorgon</td>
+    <td class="td-decoration">Divides the beat in four equal parts</td>
+    <td><img src="./images/trigorgon.png"/></td>
+  </tr>
+</table>
+<br></br>
+<div id="Qualitative Symbols"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl3">Qualitative Symbols</p>
+<table id="symbols">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Signs</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Varea</td>
+    <td class="td-decoration">Placed before a character, signifies a chant with a weight in one's voice</td>
+    <td><img src="./images/varea_neo.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Homalon</td>
+    <td class="td-decoration">Placed below characters of the same pitch, signifies chanting the last beat with up-and-down movement in the voice</td>
+    <td><img src="./images/homalon.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Antikenoma</td>
+    <td class="td-decoration">Place below an oligon, chant note with a throw in one's voice</td>
+    <td><img src="./images/antikenoma.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Antikenoma (with aplé)</td>
+    <td class="td-decoration">Placed under an ison along with an aple, followed by apostrophos + gorgon; signifies suspension</td>
+    <td><img src="./images/antikenoma_aple.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Psifiston</td>
+    <td class="td-decoration">Paced below symbol followed by descending symbols, sigifies volume/intensity</td>
+    <td><img src="./images/psifiston_neo.png"/></td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Heteron or Syndesmos</td>
+    <td class="td-decoration">Placed below two consecutive symbols, chant with smoothness</td>
+    <td><img src="./images/heteron_parakalesma.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Cross</td>
+    <td class="td-decoration">Placed before a symbol, meaning take in a breath</td>
+    <td><img src="./images/cross.png"/></td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Endofonon</td>
+    <td class="td-decoration">Placed below symbol, used with syllables ending in 'm' and 'n'</td>
+    <td><img src="./images/endofonon.png"/></td>
+  </tr>
+</table>
+<br></br>
+<div id="Scales, Modes and Keys"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl4">Scales and Modes</p>
+<table id="symbols">
+  <tr>
+    <th>Scale</th>
+    <th>Modes</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Diatonic</td>
+    <td class="td-decoration">1st, 4th, Plagal 1st, Plagal 4th</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Soft Chromatic</td>
+    <td class="td-decoration">2nd</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Hard Chromatic</td>
+    <td class="td-decoration">Plagal 2nd</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Enharmonic</td>
+    <td class="td-decoration">3rd, Plagal 3rd</td>
+</table>
+<br></br>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl5">Mode Keys</p>
+<table id="symbols">
+  <tr>
+    <th>Mode</th>
+    <th>Mode Key</th>
+    <th>Base Note</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">1st</td>
+    <td><img src="./images/mode_1_1.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">1st</td>
+    <td><img src="./images/mode_1_2.png"/></td>
+    <td class="td-decoration">Ke</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">1st</td>
+    <td><img src="./images/mode_1_3.png"/></td>
+    <td class="td-decoration">Ke</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">2nd</td>
+    <td><img src="./images/mode_2_1.png"/></td>
+    <td class="td-decoration">Thi</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">2nd</td>
+    <td><img src="./images/mode_2_2.png"/></td>
+    <td class="td-decoration">Vou</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">2nd</td>
+    <td><img src="./images/mode_2_3.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">3rd</td>
+    <td><img src="./images/mode_3_1.png"/></td>
+    <td class="td-decoration">Ga</td>
+  </tr>
+  </tr>
+    <tr>
+    <td class="td-decoration">3rd</td>
+    <td><img src="./images/mode_3_2.png"/></td>
+    <td class="td-decoration">Ga</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">3rd</td>
+    <td><img src="./images/mode_3_3.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">3rd</td>
+    <td><img src="./images/mode_3_4.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">4th</td>
+    <td><img src="./images/mode_4_1.png"/></td>
+    <td class="td-decoration">Thi</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">4th</td>
+    <td><img src="./images/mode_4_2.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">4th</td>
+    <td><img src="./images/mode_4_3.png"/></td>
+    <td class="td-decoration">Vou</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Plagal 1st</td>
+    <td><img src="./images/mode_5_1.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Plagal 1st</td>
+    <td><img src="./images/mode_5_2.png"/></td>
+    <td class="td-decoration">Ke</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 2nd</td>
+    <td><img src="./images/mode_6_1.png"/></td>
+    <td class="td-decoration">Pa</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Plagal 2nd</td>
+    <td><img src="./images/mode_6_2.png"/></td>
+    <td class="td-decoration">Thi</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 2nd</td>
+    <td><img src="./images/mode_6_3.png"/></td>
+    <td class="td-decoration">Thi</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 2nd</td>
+    <td><img src="./images/mode_6_4.png"/></td>
+    <td class="td-decoration">Vou</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Plagal 3rd</td>
+    <td><img src="./images/mode_7_1.png"/></td>
+    <td class="td-decoration">Ga</td>
+  </tr>
+    <tr>
+    <td class="td-decoration">Plagal 3rd</td>
+    <td><img src="./images/mode_7_2.png"/></td>
+    <td class="td-decoration">Zo</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 4th</td>
+    <td><img src="./images/mode_8_1.png"/></td>
+    <td class="td-decoration">Ni</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 4th</td>
+    <td><img src="./images/mode_8_2.png"/></td>
+    <td class="td-decoration">Ga</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 4th</td>
+    <td><img src="./images/mode_8_3.png"/></td>
+    <td class="td-decoration">Ga</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Plagal 4th</td>
+    <td><img src="./images/mode_8_4.png"/></td>
+    <td class="td-decoration">Vou</td>
+  </tr>
+</table>
+<br></br>
+<div id="Tempo"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl6">Tempo</p>
+<table id="symbols">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Signs</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Klásma</td>
+    <td class="td-decoration">Adds one beat</td>
+    <td><img src="./images/klasma_ano.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Aplé</td>
+    <td class="td-decoration">Adds one beat</td>
+    <td><img src="./images/aple.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Diplé</td>
+    <td class="td-decoration">Adds two beats</td>
+    <td><img src="./images/diple.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Triplé</td>
+    <td class="td-decoration">Adds three beats</td>
+    <td><img src="./images/triple.png"/></td>
+  <tr>
+    <td class="td-decoration">Gorgón</td>
+    <td class="td-decoration">Divides the beat in two equal parts</td>
+    <td><img src="./images/gorgon_neo_ano.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Dígorgon</td>
+    <td class="td-decoration">Divides the beat in three equal parts</td>
+    <td><img src="./images/digorgon.png"/></td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Trígorgon</td>
+    <td class="td-decoration">Divides the beat in four equal parts</td>
+    <td><img src="./images/trigorgon.png"/></td>
+  </tr>
+</table>
+<br></br>
+<div id="Melody and Cadences"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl7">Melody Types</p>
+<table id="symbols">
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Eirmologika</td>
+    <td class="td-decoration">Adds one beat</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Sticherarika</td>
+    <td class="td-decoration">Adds one beat</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Papadika</td>
+    <td class="td-decoration">Adds two beats</td>
+  </tr>
+</table>
+<br></br>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="symbl8">Cadences</p>
+<table id="symbols">
+  <tr>
+    <th>Type</th>
+    <th>Function</th>
+  </tr>
+  <tr>
+    <td class="td-decoration">Incomplete</td>
+    <td class="td-decoration">Acts as a comma (,)</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Complete</td>
+    <td class="td-decoration">Acts as a semicolon (;)</td>
+  </tr>
+  <tr>
+    <td class="td-decoration">Final</td>
+    <td class="td-decoration">Acts as a period (.)</td>
+  </tr>
+</table>
+<br></br>
+<br></br>
+<img src="./images/greek_cross.png" class="center"/>
+<div align="center">
+<br></br>
+<p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+            </div>
+
+            <div id="bottom" align="center"> 
+                <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+            </div>
+<br></br>
+</div>
+      <div class="bottom" align="center">
+        <img src="./images/roman_pillars.png" class="roman"/>
+        <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+      </div>
+
+        </div>
+
+    </body>
+
+</html>

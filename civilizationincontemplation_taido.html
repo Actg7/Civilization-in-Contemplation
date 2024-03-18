@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Music,Classics,HTML,CSS,JavaScript">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+        <title>Taido | Civilization in Contemplation</title>
+        <div class="pagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+            <a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html">ABOUT</a>
+          <div class="dropdown">
+            <button class="dropbtn"><span class="currentLink">TOPICS ▾</span></button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+          <!--<a href="index.html">HOME</a>-->
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          var ids = ['taido1', 'taido2', 'taido3', 'taido4', 'taido5', 'taido6', 'taido7', 'taido8', 'taido9', 'taido10', 'taido11'];
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "pagetop") {
+              y.className += "-darkmode"
+            } else {
+              y.className = "pagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode"
+            } else {
+              z.className = "darkmodebtn";
+            }
+            for (var i = 0; i < ids.length; i++) {
+              var w = document.getElementById(ids[i]);
+              if (w.className === "section") {
+                w.className += "-darkmode";
+              } else {
+                w.className = "section";
+              }
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="topFunction()" id="topBtn">🔝</button>
+        <script>
+        var mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <div class="container-fluid">
+
+            <div id="top">
+              <br></br>
+              <br></br>
+              <!--<img src="roman_pillars.png" class="roman"/>-->
+            </div>
+
+            <!--<div id="top">-->
+
+        <!--<div style="padding-left:16px">-->
+
+          <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+          <h2 class="ribbon">
+            <strong class="ribbon-content">Taido: Budo of the 21st Century</strong>
+          </h2>
+          <p><center><span class="emoji">🥋</span></center></p>
+        <!--</div>-->
+<div id="toc_container">
+  <p class="toc_title"><span class="toc-decoration">Contents</span></p>
+  <ul class="toc_list">
+    <li><a href="#Origins of Taido">Origins of Taido</a></li>
+    <li><a href="#Characteristics of Taido">Characteristics of Taido</a></li>
+    <li><a href="#Four Figures of Taido">Four Figures of Taido</a></li>
+    <li><a href="#Taido's Objectives of Action">Taido's Objectives of Action</a></li>
+    <li><a href="#Fundamental Concepts of Taido">Fundamental Concepts of Taido</a></li>
+    <li><a href="#Hokei">Hokei</a></li>
+    <li><a href="#Geometry and Angles">Geometry and Angles</a></li>
+    <li><a href="#Name and Symbolism">Name and Symbolism</a></li>
+    <li><a href="#Relevance">Relevance</a></li>
+  </ul>
+</div>
+<br></br>
+<p>Taido is a martial art presented to the public in 1965. It was created by Dr. Seiken Shukumine, who was originally from Naha city, Okinawa – the same city as the birthplace of the martial art karate. In the words of the official World Taido Federation website, “Taido aims at teaching how to succeed in society, including to cultivation of health, creativity and strategy.”</p>
+<p>Let’s delve into what that means.</p>
+<div id="Origins of Taido"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido1">What is Taido?</p>
+<br></br>
+<p>Taido is part of a system of Japanese martial arts belonging to a group of systems known as “Budo”. The style is derived from Gensei-ryu Karate-do, another martial art style founded by Dr. Shukumine. Its roots can be traced back to Chinese boxing, making it part of an elaborate lineage of martial arts styles. Here is a diagram tracing back the roots of Taido:</p>
+<img src="./images/origins_of_taido.png" alt="" class="center"/>
+<div id="Characteristics of Taido"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido2">Characteristics of Taido:</p>
+<br></br>
+<img src="./images/action.png" alt="" class="center"/>
+<br></br>
+<p>Taido is both a traditional and modern martial art. It is traditional in that its training is carried out under old-fashioned Japanese Budo principles for learning fighting techniques. A certain set of rules must be followed by the Budo-ka (trainer of Budo) while training in the Dojo. Most importantly, a traditional Budo implies that the Budo-ka trains with the purpose of cultivating the art of the Budo system. Taido is modern in that it is continuously in development, and in that it considers modern knowledge of physiology in the realm of sports. Taido’s dynamic nature allows it to function as a competitive sport. While aspects of Taido’s techniques like arm and leg movement can be recognized from Karate, its principles for movement in three-dimensional space and development of power in techniques are new creations. Taido employs gymnastic movements in order to utilize the body’s full range of motion in three-dimensional space. This also allows the Taido-ka to tilt their body axis, which both enables them to avoid incoming attacks and generate energy for their own counter attacks. The three-dimensional principle of Taido is a new principle in the realm of Budo. Other Budo and Bujutsu systems focus on moving in the x-y plane: forwards, backwards, and side-to-side. The experimentation and emotional joy associated with performing Taido’s gymnastic techniques and movements is itself part of the purpose of training. Taido employs its own unique footwork method called Unsoku Happo which is not present in other martial arts. This special type of footwork enables the Taido-ka to adjust their distance and angle from their opponent. The footwork, or Unsoku, also allows the Taido-ka to maintain their coordination and balance. Finally, the footwork is functionally connected to Taido’s techniques mechanically. Because of this, the Taido-ka is aided in moving freely through three-dimensional space. Taido also offers specific rules of practical behavior: Unsoku, Sotai (technical move, related to the fundamental structure of Taido’s technique groups), Seiho (control of the opponent’s movement), Kimegi (final technique), and Gentai (return to a proper stance).</p>
+<p>See below for a side by side comparison of more traditional budo (in this case, Taekwondo) moves versus Taido's style of movement:</p>
+<br></br>
+<p><center><img src="./images/taekwondo_moves.png" alt=""/><img src="./images/taido_movements.png" alt=""/></center></p>
+<br></br>
+<p>Now let’s look at some of the theoretical aspects of Taido.</p>
+<div id="Four Figures of Taido"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido3">The Four Figures of Taido:</p>
+<br></br>
+<p>Taido makes it a point that people must develop a higher psychological state in which they are self-aware of the energy making their existence and survival in society possible. In order for one to link their own existent energy to the creative energy, one must understand the four figures of Taido and how they form a basis for physical, psychological and practical activities. One must also understand these in relation to Taido’s concepts of Taiki, Doko, Seigyo, and Hokei.</p>
+<ol>
+  <li><strong>Physical figure</strong> refers to the most ideal form of movement required to achieve the highest level of Taido’s technique. This is formed by idealizing gymnastic movements which utilize three special dimensions. Among Taido’s technique groups (sen – vertical spin, un - vertical displacement, hen – tilt of body axis, nen – horizontal spin, ten – gymnastic), tengi is considered the most ideal form of movement in Taido.</li>
+  <li><strong>Physiological figure</strong> refers to the most ideal body mass required when one’s physiological and mobile abilities are at their maximal demand. This is formed by idealizing tengi movements in three dimensions. Hence, the physiological shape and capability most suitable for one to perform tengi is most ideal and is attained through practicing tengi.</li>
+  <li><strong>Psychological figure</strong> refers to the most ideal state of consciousness required when one’s psychological and intentional experiences are at their maximal demand. This is formed by guiding one’s actions in the right direction within the three spatial dimensions. The confident, decision-making mindset necessary for selecting and performing tengi is formed by one’s degree of willpower guiding one’s mind in the right direction while performing tengi.</li>
+  <li><strong>Emotional figure</strong> refers to the most ideal function of the senses required when one seeks to express their emotions to the fullest. It is formed by induced emotional experiences directly derived from ideal Taido training. In order for one to perform at their best during tengi, one must experience various emotions arising naturally both from and during tengi.</li>
+</ol>
+<p>In Taido, a “Figure” refers to the shape, aspect, and nature of things as they should be. Therefore, each figure represents the ideal representation of that aspect of Taido. As a side note, Taido also has a figure of personality, which is related to Hokei. The four main figures utilize the three dimensions of space and are developed mutually respective to each other. Taido techniques aside from tengi are also inclusive in these figures.</p>
+<p>Next, let’s go over the three objectives of intentional and non-intentional actions.</p>
+<div id="Taido's Objectives of Action"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido4">Taido’s Three Objectives of Intentional and Non-intentional Action:</p>
+<br></br>
+<p>People’s lifestyles, as well as reasons for joining martial arts, vary These can include self-defense, cultural immersion, and psychological aspects. These various lifestyles and motives present themselves as both intentional and non-intentional actions in our lives. In Taido, it is believed that these actions should be pursued in their ideal form whether in the context of Taido techniques or in everyday activities in society. Taido offers three tasks to be able to achieve this:</p>
+<ol>
+  <li>The task regarding how Taido sustains life physically</li>
+  <li>The task regarding how Taido practices logic subjectively</li>
+  <li>The task regarding how Taido develops basic principles rationally</li>
+</ol>
+<p>These three tasks are integrated within Taido training. Therefore, training of Taido presents solutions for one to be able to achieve these tasks.</p>
+<div id="Fundamental Concepts of Taido"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido5">The Three Corresponding Concepts of Taido:</p>
+<br></br>
+<p>Within Taido lies three underlying fundamental concepts. The concept of Taiki illustrates the presence of life force in the context of Taido training and within people. The concept of Doko illustrates the importance of movement in Taido’s techniques and one’s movement within society. The concept of Seigyo illustrates the relevance of control over one’s opponent in Taido training, as well as one’s control in life. These three concepts make up Taido, and they are all equally necessary. These concepts build off each other – for example, improving one’s Taiki will make their Doko easier and give you more freedom in Seigyo. My Sensei taught me how the three build each other and showed me a diagram to showcase this relationship:</p>
+<img src="./images/three_concepts.png" alt="" class="center"/>
+<p>The three concepts also hold meaning in the scope of universal energy. Each concept is associated with a specific domain and construct, integrated into one dimension by the energy that each concept possesses. These form three correlative thoughts comprising of one component from each dimension: Heaven-Nature-Seigyo, Earth-Society-Doko, and Man-Human-Taiki.</p>
+<img src="./images/universal_energy.png" alt="" class="center"/>
+<p>Here is a summary diagram of the basic Taido principles:</p>
+<img src="./images/summary_diagram.png" alt="" class="center"/>
+<br></br>
+<p>Taido is practiced by people who are active in society. These people possess the necessary energy to be able to exist. With this energy, one must understand the law of techniques and human behavior while connecting one’s own energy with the creative energy and giving back to society. What Taido means by giving back to the society is making good use of the skills and abilities developed through training in Taido in order to benefit society. This is a key aspect which Taido seeks to fulfill.</p>
+<p>One thing to note with Taido’s techniques is that they are not meant to be evaluated individually and performed in the same manner as in training. Rather, the techniques are meant to be evaluated altogether; at a high level of mental and physical training, this enables one to improvise and create all possible means of utilizing the body in any situation.</p>
+<p>The following illustration summarizes the aforementioned concepts as a “schematic representation of universal energy” which is shared by everything in nature and its various stages.</p>
+<img src="./images/schematic_universal_energy.png" alt="" class="center"/>
+<div id="Hokei"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido6">Hokei:</p>
+<br></br>
+<p>On the surface, hokei is a developed routine of techniques and movements which follows a set of guiding principles that focus on training specific technique groups, breathing, defensive tactics and skills. The most common ones are the five -tai hokeis, which train each of the five Taido technique groups (sen, un, hen nen, ten). Taido’s hokei also holds a deeper meaning. Hokei is the physical reflection of Taido’s principles and ideas. Hokei allows for the opportunity to express Taido’s theory in one’s own unique way. The art of hokei is the culmination of technical training and contemplation of Taido’s methodology displayed as an outward expression of one’s personal approach to Taido. The figure of personality plays a role in hokei, tying together the other figures to create an ideal way to perform Taido.</p>
+<div id="Geometry and Angles"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido7">Geometry and Angles:</p>
+<br></br>
+<img src="./images/unsoku.png" alt="" class="center"/>
+<br></br>
+<p>Taido makes extensive use of geometry, angles, space and measurment. As a three-dimensional martial art, angles are not just limited to the x-y plane; by representing a person as a point in three dimensions and treating movement as a vector, one can visualize a sphere surrounding the point in three dimensional space with the movement vector representing the radius. This is to say that one can move in any direction in space using Taido footwork and movements, effectively controlling the sphere around themselves both offensively and defensively.</p>
+<p>One example of a routine that builds training using footwork and angles is Unsoku-Gorendo. This makes use of several Taido footwork patterns in order to move coninously in a circular pattern about a point. As seen in the picture above, footwork patterns Ka, Gen, and Ko move with a 45º angle, while So, In, and Ten demonstrate straight line motion. The routine has five lines as follows:</p>
+<p>1: Gen Ka Ten Ko Ten</p>
+<p>2: Ko Ka Ten Gen Ten</p>
+<p>3: Gen Ten Ko Ka Ten</p>
+<p>4: Ko Ten Gen Ka Ten</p>
+<p>5: Gen Ka So In Ko Ten Ko</p>
+<p>Each of the first four lines reveals an angular displacement of 3π/4 radians, or 3/4 of a rotation. The final line completes a full revolution of 2π radians. In total, this adds up to 4 * 3/4 + 1 = 4 full rotations about the central point.</p>
+<p>Footwork can be combined with Taido technique movement styles to utilize the full three-dimensional space surrounding the practitioner. Sentai movements employ spinning about the z-axis within the x-y plane. Untai movements move vertically along the z-axis, as well as forwards within the x-y plane. Hentai movements involve tilting the body axis at an angle relative to the z-axis, while Nentai movements display horizontal aerial spinning about the z or y axes. Tentai movements involve a combination of spinning about the x or y axes, moving forwards or backwards along the x-y plane, and moving vertically with respect to the z-axis. Techniques within these groups can be combines with footwork to move anywhere within the three-dimensional space about the user. For example, one could change their angle in the x-y plane using a movement such as Ka or Ko, then combine this with a Sentai technique to rotate about the z-axis in order to build momentum and move forard toward the opponent. In this way, many approaches can be taken to move from point A to point B and fully utilize the space around, perhaps for an optimized attack towards an opponent, or for an evasion form an attack while simultaneously repositioning oneself to regain the offensive.</p>
+<p><center><img src="./images/sen.png" class="graph"/><img src="./images/un.png" class="graph"/><img src="./images/hen.png" class="graph"/><img src="./images/nen.png" class="graph"/><img src="./images/ten.png" class="graph"/></center></p>
+<div id="Name and Symbolism"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido8">Taido's Name and Symbol:</p>
+<br></br>
+<p>The name Taido comes from the Japanese characters “Tai” (躰) and “Do” (道). The character “Tai” is composed of the characters “Mi” (身), which means mind, and “Karada” (体), which means body. Together they translate to human mind and body, or human being. “Do” is a term meaning “the way of”. Together, they form the word Taido (躰道) which means “the way of the body”.</p>
+<p>The Taido symbol is a spearhead containing a circular shield with the character “Tai” inside. It draws its inspiration from a Chinese tale of an impenetrable shield and an unbreakable spear. When put to the test, the shield was pierced but the spear had broken. The symbol demonstrates that both offense and defense are necessary to protect oneself.</p>
+<img src="./images/taido.png" alt="" class="center"/>
+<div id="Relevance"></div>
+<hr style="height:60px; visibility:hidden;"/>
+<p class="section" id="taido9">Relevance of Taido in Japan and Around the Globe:</p>
+<br></br>
+<p>Taido is known as the “Budo of the 21st century”. Its roots come from a long line of tradition and historically renown martial art forms, which are central to Japanese culture. Taido aims at applying scientific methodology and traditional values to the evolution of martial arts. Shukumine himself believed that Taido’s goal is to “equip its practitioners to function at a high level in society”. Taido functions as a martial art which seeks to fulfill purpose at every level in an individual, in society and in the grand scope of our reality. Shukumine himself was a philosopher and scholar of Budo theory, and he sought to create a martial art form which expanded on his three dimensional Gensei-ryu karate-do to emphasize the union of mind and body, of internal systems and external form into a singular purpose, whether to defend oneself or to live out one’s life. This union of “mi” and “karada” with the purpose of fulfilling the intentions of the Taido-ka is the purpose of Taido.</p>
+<p>As all things, Taido is not complete nor perfect. Taido is many things: free sparring, practicing techniques, the art of hokei, cultivating health health, thinking creatively, challenging oneself and much more. One who trains in Taido is meant to understand the principles of Taido and apply them in one’s own context and understanding creatively and is free to adapt the theories of Taido to one’s own circumstances. In this manner, “do” is fulfilled. Taido is how one applies the ideas of Taido in the right situation. Taido is what we make of it.</p>
+<p>Currently, there are 11 member nations of the World Taido Federation. These countries compete in official global Taido tournaments and aim to further the scope of Taido. There is currently one Taido school in America that is officially recognized by the World Taido Association, which I am currently a member of. I hope that in the future more countries join the World Taido Federation and that we can collectively grow Taido and share our unique experiences with each other.</p>
+<p>As one more note, Taido contains extensive theory and material which cannot be fully discussed on this article. I encourage you to learn more about Taido if you are interested and to try to practice its principles and techniques. The joy and understanding of Taido comes from doing it oneself.</p>
+<p>躰道</p>
+<br></br>
+<p class="section" id="taido10">Credits:</p>
+<ol>
+  <li>Taido Kyohan (Taido Instructive Handbook)</li>
+  <li>https://taidoblog.com/</li>
+  <li>http://j2n-ma.blogspot.com/2012/08/theory-of-taido.html</li>
+  <li>https://taido.net/</li>
+  <li>http://j2n-ma.blogspot.com/2012/08/taido.html</li>
+</ol>
+<br></br>
+<p class="section" id="taido11">Learn more:</p>
+<ul>
+  <li>http://taido.us/</li>
+  <li>https://en.wikipedia.org/wiki/Taid%C5%8D</li>
+  <li>https://www.youtube.com/watch?v=pO5BAusu8IE</li>
+</ul>
+</div>
+<br></br>
+<p><center><span class="emoji">🥋</span></center></p>
+
+</div>
+
+<div align="center">
+<br></br>
+<p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+            </div>
+
+            <div id="bottom" align="center"> 
+                <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+            </div>
+<br></br>
+</div>
+      <div class="bottom" align="center">
+        <img src="./images/roman_pillars.png" class="roman"/>
+        <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+      </div>
+
+        </div>
+
+    </body>
+
+</html>

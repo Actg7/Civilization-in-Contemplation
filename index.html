@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing meaningful elements of different societies.">
+        <meta name="keywords" content="Athanasios,Grivakis,Byzantine,Taido,Incan,Quipu,Civilization,Contemplation">
+        <meta name="author" content="Athanasios Grivakis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+        <title>Civilization in Contemplation</title>
+        <div class="pagetop" id="myPageTop"></div>
+        <div class="topnav" id="myTopnav">
+          <div class="navlogo" id="navlogo">
+            <a href="index.html"><img src="./images/logo.svg"> Civilization in Contemplation</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+          <a href="civilizationincontemplation_about.html">ABOUT</a>
+          <div class="dropdown">
+            <button class="dropbtn">TOPICS ▾</button>
+            <div class="dropdown-content">
+              <a href="civilizationincontemplation_byzantine_music.html">Byzantine Music</a>
+              <a href="civilizationincontemplation_byzantine_musical_script.html">Byzantine Musical Script</a>
+              <a href="civilizationincontemplation_incan_quipu.html">Incan Quipu</a>
+              <a href="civilizationincontemplation_taido.html">Taido Martial Art</a>
+            </div>
+          </div>
+          <!--<a href="index.html"><span class="currentLink">HOME</span></a>-->
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177402590-1">
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-177402590-1');
+        </script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script>
+          function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var v = document.getElementById("archives");
+            if (v.className === "flash-off") {
+              v.className = "flash";
+            } else {
+              v.className += "-off";
+            }
+            var w = document.getElementById("indx");
+            if (w.className === "shimmer") {
+              w.className += "-off";
+            } else {
+              w.className = "shimmer";
+            }
+            var x = document.getElementById("bottom-text");
+            if (x.className === "bottom-text") {
+              x.className += "-darkmode";
+            } else {
+              x.className = "bottom-text";
+            }
+            var y = document.getElementById("myPageTop");
+            if (y.className === "pagetop") {
+              y.className += "-darkmode";
+            } else {
+              y.className = "pagetop";
+            }
+            var z = document.getElementById("darkmodebtn");
+            if (z.className === "darkmodebtn") {
+              z.className += "-darkmode";
+            } else {
+              z.className = "darkmodebtn";
+            }
+            /*const w = document.querySelectorAll(".section");
+            for (var i = 0; i < w.length; i++) {
+              if (w.item(i).className === "section") {
+                w[i].className += "-darkmode";
+              } else {
+                w[i].className = "section";
+              }
+            }*/
+          }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+          <div id="top">
+            <br></br>
+            <br></br>
+            <!--<img src="roman_pillars.png" class="roman"/>-->
+
+            <button class="darkmodebtn" id = "darkmodebtn" onclick="darkMode()"><span class="moonemoji">🌙</span></button>
+
+            <h1 class="shimmer" id="indx">Civilization in Contemplation</h1>
+            <img src="./images/logo_large.svg" class="center"/>
+            <!--<p><center><img src="olive_branch_left.png" class="olive"/><img src="olive_branch_right.png" class="olive"/></center></p>-->
+            <br></br>
+            <img src="./images/struct.png" class="center"/>
+          </div>
+          <div id="top">
+            <h4 class="flash-off" id = "archives"><i>"A glance into societies' esoteric archives"</i></h4>    
+          </div>
+          <div align="center">
+            <p class="bottom-text" id="bottom-text">Discover. | Learn. | Grow.</p>
+          </div>
+          <div id="bottom" align="center"> 
+            <b><i><font face="Quicksand" color="magenta" size="2">"Proficiat in Doctrina"</font></i></b>
+          </div>
+          <br></br>
+          <br></br>
+      </div>
+      <div class = "footer">
+        <div class="bottom" align="center">
+          <img src="./images/roman_pillars.png" class="roman"/>
+          <font face="Quicksand" color="white">🇺🇸 Copyright &#169; 2021 Athanasios Grivakis  </font>
+        </div>
+      </div>
+
+        <!--</div>-->
+
+    </body>
+
+</html>
