@@ -514,7 +514,7 @@ span.moonemoji {
 .flash {
   text-align: center;
   color: rgba(255,255,255,0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#5F5CF6), to(white), color-stop(0.5, #fff));
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#5F5CF6), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(white), to(#5F5CF6), color-stop(0.5, #fff));
   background: gradient(linear, left top, right top, from(white), to(#5F5CF6), color-stop(0.5, #fff));
   -webkit-background-size: 125px 100%;
@@ -568,27 +568,27 @@ bg-vendor(args) {
 
 .shimmer {
   color: rgba(255,255,255,0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#FFD700), to(#FFD700), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#FFD700), to(#FFF), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#FFD700), to(#FFF), color-stop(0.5, #fff));
+  -webkit-background-size: 300px 100%;
+  -moz-background-size: 300px 100%;
+  background-size: 300px 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-animation-name: shimmer;
   -moz-animation-name: shimmer;
   animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #222;
+  background-color: #FFFFFF;
 }
 @-moz-keyframes shimmer {
   0% {
@@ -804,13 +804,13 @@ background-color: #6BA7F8;
 
 .array {
   display: grid;
-  height: 100%;
+  height: 80%;
   place-items: center;
 }
 
 .webLinkButtons {
   display: flex;
-  width: 700px;
+  width: 500px;
   height: 200px;
   align-items: center;
   justify-content: space-around;
@@ -819,7 +819,7 @@ background-color: #6BA7F8;
 .webLinkButtons button {
   position: relative;
   display: block;
-  height: 50px;
+  height: 60px;
   width: 120px;
   margin: 40px 0;
   color: #fff;
@@ -835,7 +835,7 @@ background-color: #6BA7F8;
 
 .webLinkButtons button span {
   position: absolute;
-  height: 50px;
+  height: 60px;
   width: 60px;
   top: 0;
   left: -61px;
@@ -854,24 +854,23 @@ background-color: #6BA7F8;
   top: 3px;
 }
 
-button.facebook, button.facebook span {
-  background: #3B5999;
-  border-left: 1px solid #2E4476;
-  box-shadow: 0px 5px 0px 0px #2E4476;
+.github{
+  height: 90%;
+  margin-top: 10%;
 }
 
-button.facebook:active {
-  box-shadow: 0px 2px 0px 0px #2E4476;
+.linkedin{
+  margin-top:8%
 }
 
-button.instagram, button.instagram span {
-  background: #E1306C;
-  border-left: 1px solid #C91D56;
-  box-shadow: 0px 5px 0px 0px #C91D56;
+button.github, button.github span {
+  background: #3A4348;
+  border-left: 1px solid #323A3D;
+  box-shadow: 0px 5px 0px 0px #323A3D;
 }
 
-button.instagram:active {
-  box-shadow: 0px 2px 0px 0px #C91D56;
+button.github:active {
+  box-shadow: 0px 2px 0px 0px #323A3D;
 }
 
 button.linkedin, button.linkedin span {
